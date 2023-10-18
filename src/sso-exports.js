@@ -10,8 +10,8 @@ const awsmobile = {
     "oauth": {
         "domain": process.env.VUE_APP_DOMAIN,
         "scope": ["email", "openid", "profile"],
-        "redirectSignIn": "http://localhost:8080/",
-        "redirectSignOut":   "http://localhost:8080/",
+        "redirectSignIn": process.env.VUE_APP_REDIRECT_URL,
+        "redirectSignOut": process.env.VUE_APP_REDIRECT_URL,
         "responseType": 'token',
     },
     "aws_cognito_username_attributes": [],
